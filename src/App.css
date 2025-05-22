@@ -1,0 +1,200 @@
+/* General body and layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background for the whole page */
+  color: #ffffff; /* White text */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Improve text readability */
+}
+
+/* Main App container */
+.App {
+  text-align: center;
+  max-width: 800px; /* Adjusted to be more compact for medium screens */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #1A1A1A; /* Darker background for navbar */
+  padding: 15px 0; /* Slightly reduced padding for medium screens */
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid #0277BD; /* Blue accent for bottom border */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 20px; /* Reduced spacing between navbar items */
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #0277BD; /* Blue background on hover */
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 119, 190, 0.3);
+}
+
+.navbar a:active {
+  background-color: #01579B; /* Darker blue when clicked */
+  color: #ffffff;
+}
+
+/* Page Headings */
+h2 {
+  color: #0277BD; /* Bright blue for headings */
+  font-size: 2.4rem; /* Adjusted font size */
+  margin-top: 40px;
+  font-weight: 700;
+  text-transform: uppercase; /* Add more emphasis to the headings */
+  letter-spacing: 2px; /* Slightly spaced letters for more modern appeal */
+}
+
+/* Form and Buttons Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  max-width: 600px; /* More compact form */
+  margin-left: auto;
+  margin-right: auto;
+  gap: 15px;
+}
+
+form input {
+  padding: 14px;
+  margin: 10px 0;
+  width: 85%; /* Reduced width for medium-sized screens */
+  border: 1px solid #0277BD;
+  border-radius: 50px; /* Full round corners for the input fields */
+  font-size: 18px;
+  background-color: #2C2C2C; /* Darker input background */
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #0288D1;
+  background-color: #333333;
+}
+
+form button {
+  padding: 14px 28px;
+  border: none;
+  background-color: #0277BD;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 85%; /* Reduced button width for medium screens */
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #01579B;
+  transform: translateY(-3px); /* Slightly lift button on hover */
+}
+
+form button:active {
+  background-color: #0288D1;
+  transform: translateY(1px); /* Button pushes down when clicked */
+}
+
+/* Table Styles */
+table {
+  margin-top: 40px;
+  width: 85%; /* Adjusted to fit more comfortably */
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 18px;
+  border: 1px solid #0277BD;
+  text-align: left;
+}
+
+table th {
+  background-color: #0288D1;
+  color: white;
+  font-size: 18px;
+}
+
+table td {
+  background-color: #2C2C2C;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* General Button Styling */
+button {
+  padding: 14px 24px;
+  border: none;
+  background-color: #0277BD;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 85%; /* Reduced button width */
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #01579B;
+}
+
+button:active {
+  background-color: #0288D1;
+}
+
+/* New Styling for Table Actions (Edit/Delete) */
+button.edit, button.delete {
+  margin: 10px;
+  padding: 12px 22px;
+  font-size: 16px;
+}
+
+button.edit {
+  background-color: #81C784; /* Green color for edit actions */
+}
+
+button.edit:hover {
+  background-color: #66BB6A; /* Darker green on hover */
+}
+
+button.delete {
+  background-color: #EF5350; /* Red for delete actions */
+}
+
+button.delete:hover {
+  background-color: #E53935; /* Darker red on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 16px;
+    margin: 0 12px; /* Smaller margin for medium screens */
+  }
+
+  form input, form button {
+    width: 80%; /* Slightly narrower input/button for medium screens */
+  }
+
+  table {
+    width: 100%; /* Full width for small screens */
+  }
+
+  table th, table td {
+    font-size: 14px;
+  }
+}
